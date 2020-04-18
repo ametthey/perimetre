@@ -15,7 +15,7 @@ get_header(); ?>
 				<div class="section__presentation__website">
 					<!-- 16:9 en vidéo -->
 					<video class="video--cinema" autoplay muted loop playsinline preload="auto">
-						<source type="video/mp4" src="/wp-content/uploads/test.mov"></source>
+					<source type="video/mp4" src="<?php echo get_field('home_background_video'); ?>"></source>
 					</video>
 
 					<h1 class="home__sentence__presentation">creative studio <br>based in paris</h1>
