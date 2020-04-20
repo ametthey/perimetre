@@ -19,7 +19,7 @@ get_header(); ?>
 
 				<h1 class="home__sentence__presentation">creative studio <br>based in paris</h1>
 
-				<button onclick="animateScrollTo(100)"><img src="/wp-content/themes/_themename/dist/assets/images/chevron.svg" alt=""></button>
+				<button onclick="animateScrollTo(100)"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/chevron.svg" alt=""></button>
 
 			</div>
 

@@ -117,11 +117,11 @@
 
 		<div class="about__links__container">
 			<?php if ( get_field('header_portfolio', 'option') ):?>
-			<a class="about__link" href="<?php the_field('header_portfolio', 'option'); ?>" target="_blank"><img src="/wp-content/themes/_themename/dist/assets/images/arrow_right.svg" alt="">download portfolio</a>
+			<a class="about__link" href="<?php the_field('header_portfolio', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">download portfolio</a>
 			<?php endif; ?>
 
 			<?php if ( get_field('header_newsletter', 'option') ): ?>
-				<a class="about__link" href="<?php the_field('header_newsletter', 'option'); ?>" target="_blank"><img src="/wp-content/themes/_themename/dist/assets/images/arrow_right.svg" alt="">newsletter</a>
+				<a class="about__link" href="<?php the_field('header_newsletter', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">newsletter</a>
 			<?php endif; ?>
 		</div>
 
