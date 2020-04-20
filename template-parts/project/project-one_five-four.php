@@ -26,15 +26,23 @@ if( !empty($block['align']) ) {
 
 // Load values and assign defaults.
 $image = get_field('perfect_one');
+$video = get_field('video');
 ?>
 <!-- PERFECT ONE | 5:4 -->
 <div class="slide">
 	<div class="project__container__one">
-		<!-- 16:9 -->
+		<?php if( $video ) { ?>
 
-		<?php if ( $image  ) {
-			echo wp_get_attachment_image( $image, 'presentation', false, array( 'class' => 'img--alternative' ) );
-			}
-		?>
+				<video class="img--alternative" autoplay muted loop playsinline preload="auto">
+					<source type="video/mp4" src="<?php echo $video; ?>"></source>
+				</video>
+
+			<?php } else { ?>
+
+			<?php if( !empty($image) ): ?>
+					<?php echo wp_get_attachment_image($image, 'presentation', false,  array( 'class' => 'img--alternative' )); ?>
+			<?php endif; ?>
+
+		<?php } ?>
 	</div>
 </div>

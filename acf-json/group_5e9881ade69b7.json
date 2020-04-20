@@ -1,0 +1,156 @@
+{
+    "key": "group_5e9881ade69b7",
+    "title": "Project: Composition avec 3 images en format story",
+    "fields": [
+        {
+            "key": "field_5e9881adec06d",
+            "label": "Image1",
+            "name": "instagram_1",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e9c94b00ccb0",
+            "label": "Vidéo1",
+            "name": "video1",
+            "type": "audio_video_player",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "general_type": "video",
+            "mime_types": "",
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_5e9c94b9fb37f",
+            "label": "Vidéo2",
+            "name": "video2",
+            "type": "audio_video_player",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "general_type": "video",
+            "mime_types": "",
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_5e9881adec0a2",
+            "label": "Image2",
+            "name": "instagram_2",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e9881adec0cf",
+            "label": "Image3",
+            "name": "instagram_3",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e9c94c340568",
+            "label": "Vidéo3",
+            "name": "video3",
+            "type": "audio_video_player",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "general_type": "video",
+            "mime_types": "",
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/instagram"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1587320021
+}

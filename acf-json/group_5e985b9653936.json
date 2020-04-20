@@ -1,0 +1,200 @@
+{
+    "key": "group_5e985b9653936",
+    "title": "Project: Composition avec 4 images au format 16:9",
+    "fields": [
+        {
+            "key": "field_5e985b9659a14",
+            "label": "Image #1",
+            "name": "four_cinema_image_1",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e9c8c2d6e6eb",
+            "label": "Vidéo #1",
+            "name": "video1",
+            "type": "audio_video_player",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "general_type": "video",
+            "mime_types": "",
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_5e986f8520f8e",
+            "label": "Image #2",
+            "name": "four_cinema_image_2",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e9c8c467d2c9",
+            "label": "Vidéo #2",
+            "name": "video2",
+            "type": "audio_video_player",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "general_type": "video",
+            "mime_types": "",
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_5e986f8820f8f",
+            "label": "Image #3",
+            "name": "four_cinema_image_3",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e9c8c4ed24d8",
+            "label": "Vidéo #3",
+            "name": "video3",
+            "type": "audio_video_player",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "general_type": "video",
+            "mime_types": "",
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_5e986f8a20f90",
+            "label": "Image #4",
+            "name": "four_cinema_image_4",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e9c8c54812de",
+            "label": "Vidéo #4",
+            "name": "video4",
+            "type": "audio_video_player",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "general_type": "video",
+            "mime_types": "",
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/quatre-carre-two"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1587317885
+}

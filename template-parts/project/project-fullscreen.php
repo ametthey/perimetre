@@ -26,17 +26,23 @@ if( !empty($block['align']) ) {
 
 // Load values and assign defaults.
 $image = get_field('fullscreen');
+$video = get_field('video');
 ?>
 <!-- FULLSCREEN -->
 <div class="slide">
 	<div class="project__container__fullscreen">
-		<!-- 16:9 en vidéo -->
-		<?php if ( $image ) {
-			echo wp_get_attachment_image( $image, 'presentation', false, array( 'class' => 'img--responsive' ) );
-		}
-		?>
-		<!-- 	<video class="video&#45;&#45;cinema" autoplay muted loop playsinline preload="auto"> -->
-		<!-- 	<source type="video/mp4" src="/wp&#45;content/uploads/test.mov"></source> -->
-		<!-- </video> -->
+		<?php if( $video ) { ?>
+
+				<video class="video--cinema" autoplay muted loop playsinline preload="auto">
+					<source type="video/mp4" src="<?php echo $video; ?>"></source>
+				</video>
+
+			<?php } else { ?>
+
+			<?php if( !empty($image) ): ?>
+					<?php echo wp_get_attachment_image($image, 'presentation', false,  array( 'class' => 'img--alternative' )); ?>
+			<?php endif; ?>
+
+		<?php } ?>
 	</div>
 </div>

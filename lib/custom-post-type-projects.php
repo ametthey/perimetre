@@ -10,35 +10,35 @@
  *
  **/
 
-function perimetre2020_project_custom_post_type() {
+function _themename_project_custom_post_type() {
 	$labels = array(
-		'name' => _x( 'projects', 'Post Type General Name', 'perimetre2020' ),
-		'singular_name' => _x( 'project', 'Post Type Singular Name', 'perimetre2020' ),
-		'menu_name' => _x( 'Projects', 'Admin Menu text', 'perimetre2020' ),
-		'name_admin_bar' => _x( 'project', 'Add New on Toolbar', 'perimetre2020' ),
-		'archives' => __( 'Archives project', 'perimetre2020' ),
-		'attributes' => __( 'Attributs project', 'perimetre2020' ),
-		'parent_item_colon' => __( 'Parents project:', 'perimetre2020' ),
-		'all_items' => __( 'Tous les Projects', 'perimetre2020' ),
-		'add_new_item' => __( 'Ajouter nouveau project', 'perimetre2020' ),
-		'add_new' => __( 'Ajouter', 'perimetre2020' ),
-		'new_item' => __( 'Nouveau project', 'perimetre2020' ),
-		'edit_item' => __( 'Modifier le Project', 'perimetre2020' ),
-		'update_item' => __( 'Mettre à jour le Project', 'perimetre2020' ),
-		'view_item' => __( 'Voir Project', 'perimetre2020' ),
-		'view_items' => __( 'Voir Projects', 'perimetre2020' ),
-		'search_items' => __( 'Rechercher dans les Projects', 'perimetre2020' ),
-		'not_found' => __( 'Aucun project trouvé.', 'perimetre2020' ),
-		'not_found_in_trash' => __( 'Aucun project trouvé dans la corbeille.', 'perimetre2020' ),
-		'featured_image' => __( 'Image mise en avant', 'perimetre2020' ),
-		'set_featured_image' => __( 'Définir l’image mise en avant', 'perimetre2020' ),
-		'remove_featured_image' => __( 'Supprimer l’image mise en avant', 'perimetre2020' ),
-		'use_featured_image' => __( 'Utiliser comme image mise en avant', 'perimetre2020' ),
-		'insert_into_item' => __( 'Insérer dans project', 'perimetre2020' ),
-		'uploaded_to_this_item' => __( 'Téléversé sur cet project', 'perimetre2020' ),
-		'items_list' => __( 'Liste projects', 'perimetre2020' ),
-		'items_list_navigation' => __( 'Navigation de la liste projects', 'perimetre2020' ),
-		'filter_items_list' => __( 'Filtrer la liste projects', 'perimetre2020' ),
+		'name' => _x( 'projects', 'Post Type General Name', '_themename' ),
+		'singular_name' => _x( 'project', 'Post Type Singular Name', '_themename' ),
+		'menu_name' => _x( 'Projects', 'Admin Menu text', '_themename' ),
+		'name_admin_bar' => _x( 'project', 'Add New on Toolbar', '_themename' ),
+		'archives' => __( 'Archives project', '_themename' ),
+		'attributes' => __( 'Attributs project', '_themename' ),
+		'parent_item_colon' => __( 'Parents project:', '_themename' ),
+		'all_items' => __( 'Tous les Projects', '_themename' ),
+		'add_new_item' => __( 'Ajouter nouveau project', '_themename' ),
+		'add_new' => __( 'Ajouter', '_themename' ),
+		'new_item' => __( 'Nouveau project', '_themename' ),
+		'edit_item' => __( 'Modifier le Project', '_themename' ),
+		'update_item' => __( 'Mettre à jour le Project', '_themename' ),
+		'view_item' => __( 'Voir Project', '_themename' ),
+		'view_items' => __( 'Voir Projects', '_themename' ),
+		'search_items' => __( 'Rechercher dans les Projects', '_themename' ),
+		'not_found' => __( 'Aucun project trouvé.', '_themename' ),
+		'not_found_in_trash' => __( 'Aucun project trouvé dans la corbeille.', '_themename' ),
+		'featured_image' => __( 'Image mise en avant', '_themename' ),
+		'set_featured_image' => __( 'Définir l’image mise en avant', '_themename' ),
+		'remove_featured_image' => __( 'Supprimer l’image mise en avant', '_themename' ),
+		'use_featured_image' => __( 'Utiliser comme image mise en avant', '_themename' ),
+		'insert_into_item' => __( 'Insérer dans project', '_themename' ),
+		'uploaded_to_this_item' => __( 'Téléversé sur cet project', '_themename' ),
+		'items_list' => __( 'Liste projects', '_themename' ),
+		'items_list_navigation' => __( 'Navigation de la liste projects', '_themename' ),
+		'filter_items_list' => __( 'Filtrer la liste projects', '_themename' ),
 	);
 	$args = array(
 		'labels' => $labels,
@@ -52,7 +52,7 @@ function perimetre2020_project_custom_post_type() {
 	register_post_type( 'project', $args );
 }
 
-add_action( 'init', 'perimetre2020_project_custom_post_type' );
+add_action( 'init', '_themename_project_custom_post_type' );
 
 function project_type_tax() {
 	$labels = array(

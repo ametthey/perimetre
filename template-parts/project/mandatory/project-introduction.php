@@ -67,10 +67,19 @@ $annee = get_field('project_annee');
 		<div class="project__presentation__image">
 			<div class="outer">
 				<div class="inner">
-					<?php echo wp_get_attachment_image($image, 'presentation', false,  array( 'class' => 'img--ratio' )); ?>
-					<video class="video--cinema" autoplay muted loop playsinline preload="auto">
-						<source type="video/mp4" src="<?php echo $video; ?>"></source>
-					</video>
+					<?php if( $video ) { ?>
+						<video class="video--cinema" autoplay muted loop playsinline preload="auto">
+							<source type="video/mp4" src="<?php echo $video; ?>"></source>
+						</video>
+
+					<?php } else { ?>
+						<?php $image = get_field('project_image'); ?>
+
+							<?php if( !empty($image) ): ?>
+									<?php echo wp_get_attachment_image($image, 'presentation', false,  array( 'class' => 'img--ratio' )); ?>
+								<?php endif; ?>
+
+						<?php } ?>
 				</div>
 			</div>
 		</div>

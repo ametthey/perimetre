@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-
-
-
 	<div class="site">
 		<div id="section--horizontal">
 
@@ -13,7 +10,7 @@
 				<!-- NEXT -->
 				<div class="slide slide-next">
 					<div class="project__next">
-						<?php 
+						<?php
 							$project = new WP_Query(
 								array(
 									'order'				=> 'ASC',

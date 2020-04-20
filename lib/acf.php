@@ -4,7 +4,7 @@
  * Advanced Custom Field : Block
  *
  **/
-function perimetre2020_register_acf_block_types() {
+function _themename_register_acf_block_types() {
 
 	//HOME PAGE : presentation project
 	acf_register_block_type(
@@ -142,15 +142,29 @@ function perimetre2020_register_acf_block_types() {
 
 // Check if function exists and hook into setup.
 if( function_exists('acf_register_block_type') ) {
-	add_action('acf/init', 'perimetre2020_register_acf_block_types');
+	add_action('acf/init', '_themename_register_acf_block_types');
 }
 
 if( function_exists('acf_add_options_page') ) {
-	
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+
 	acf_add_options_sub_page(array(
-		'page_title' 	=> 'About Section  Settings',
-		'menu_title'	=> 'About Section',
+		'page_title' 	=> 'Theme Header About Settings',
+		'menu_title'	=> 'Header: About',
 		'parent_slug'	=> 'theme-general-settings',
 	));
-	
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
 }

@@ -1,6 +1,6 @@
 <?php 
 
-function perimetre2020_image_configuration() {
+function _themename_image_configuration() {
 	// add_image_size( 'cinema', 1920, 1080 ); // ratio 16:9
 	add_image_size( 'presentation', 1440,  1152 ); // image d'introduction pour les pages projets - 5:4
 	// add_image_size( 'alternative-presentation', 1152, 1440 ); // 4:5
@@ -11,4 +11,4 @@ function perimetre2020_image_configuration() {
 	// add_image_size( 'project_hover', 234, 187 ); // pour la page project, thumbnail en hover
 
 }
-add_action( 'after_setup_theme', 'perimetre2020_image_configuration' );
+add_action( 'after_setup_theme', '_themename_image_configuration' );

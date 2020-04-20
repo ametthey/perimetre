@@ -27,6 +27,8 @@ if( !empty($block['align']) ) {
 // Load values and assign defaults.
 $image1 = get_field('instagram_1');
 $image2 = get_field('instagram_2');
+$video1 = get_field('video1');
+$video2 = get_field('video2');
 ?>
 <!-- COMPOSITION WITH TWO IMAGES : 16:9 on the left + 4:5 on the right -->
 <div class="slide">
@@ -36,9 +38,20 @@ $image2 = get_field('instagram_2');
 			<!-- top right item -->
 			<div class="outer_sixteen_nine">
 				<div class="inner">
-					<?php if ( $image1 ) {
-						echo wp_get_attachment_image( $image1, 'presentation', false, array( 'class' => 'img--responsive' ) ); 
-} ?>
+				<!-- img&#45;&#45;responsive -->
+					<?php if( $video1 ) { ?>
+
+							<video class="img--alternative" autoplay muted loop playsinline preload="auto">
+								<source type="video/mp4" src="<?php echo $video1; ?>"></source>
+							</video>
+
+						<?php } else { ?>
+
+						<?php if( !empty($image1) ): ?>
+								<?php echo wp_get_attachment_image($image1, 'presentation', false,  array( 'class' => 'img--responsive' )); ?>
+						<?php endif; ?>
+
+					<?php } ?>
 				</div>
 			</div>
 
@@ -47,9 +60,19 @@ $image2 = get_field('instagram_2');
 		
 			<div class="outer_quatre_cinq">
 				<div class="inner">
-					<?php if ( $image2 ) {
-						echo wp_get_attachment_image( $image2, 'presentation', false, array( 'class' => 'img--responsive' ) ); 
-} ?>
+					<?php if( $video2 ) { ?>
+
+							<video class="img--alternative" autoplay muted loop playsinline preload="auto">
+								<source type="video/mp4" src="<?php echo $video2; ?>"></source>
+							</video>
+
+						<?php } else { ?>
+
+						<?php if( !empty($image2) ): ?>
+								<?php echo wp_get_attachment_image($image2, 'presentation', false,  array( 'class' => 'img--responsive' )); ?>
+						<?php endif; ?>
+
+					<?php } ?>
 
 				</div>
 			</div>

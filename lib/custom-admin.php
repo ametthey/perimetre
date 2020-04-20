@@ -4,7 +4,7 @@
  * Remove elements from the left menu on the dashboard
  * https://developer.wordpress.org/reference/functions/remove_menu_page/
  */
-function perimetre2020_remove_options_menu(){
+function _themename_remove_options_menu(){
    
   remove_menu_page( 'edit.php' );                   //Posts
   remove_menu_page( 'edit-comments.php' );          //Comments
@@ -19,5 +19,5 @@ function perimetre2020_remove_options_menu(){
   // remove_menu_page( 'options-general.php' );        //Settings
    
 }
-add_action( 'admin_menu', 'perimetre2020_remove_options_menu' );
+add_action( 'admin_menu', '_themename_remove_options_menu' );
 ?>

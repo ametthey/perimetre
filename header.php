@@ -32,21 +32,16 @@
 	<h4 class="header__title" id="about">
 		About
 	</h4>
-</header>	
+</header>
 
 <div class="menu__about">
 
 	<div class="menu__about__presentation">
-		<h2>Périmètre est un studio de création et de direction artistique basé à Paris. 
-			<br>
-			<br>
-			Périmètre fonctionne comme un collectif d’artistes, reposant sur la collaboration avec un large réseau de créatifs spécialisés dans différents domaines : graphisme, vidéo, photographie, motion design, scénographie, musique.
-		</h2>
+		<h2><?php echo get_field('header_presentation', 'option'); ?></h2>
 
 	</div>
 	<div class="menu__about__contact">
-		<h5>We’re always looking for new collaborations and profile. If you’re interested in applying for and internf you’re interested in applying for an internship, the team would like to hear from you at internship [at] glgth.com. Please include your portfolio in PDF format. The studio accepts student interns year-round.
-		</h5>
+		<h5><?php echo get_field('header_contact', 'option'); ?></h5>
 
 		<!-- separator -->
 		<div class="separator"></div>
@@ -121,23 +116,37 @@
 		<br>
 
 		<div class="about__links__container">
-			<a class="about__link" href=""><img src="wp-content/themes/perimetre2020/dist/assets/images/arrow_right.svg" alt="">download portfolio</a>
-			<a class="about__link" href="">newsletter</a>
+			<?php if ( get_field('header_portfolio', 'option') ):?>
+			<a class="about__link" href="<?php the_field('header_portfolio', 'option'); ?>" target="_blank"><img src="/wp-content/themes/_themename/dist/assets/images/arrow_right.svg" alt="">download portfolio</a>
+			<?php endif; ?>
+
+			<?php if ( get_field('header_newsletter', 'option') ): ?>
+				<a class="about__link" href="<?php the_field('header_newsletter', 'option'); ?>" target="_blank"><img src="/wp-content/themes/_themename/dist/assets/images/arrow_right.svg" alt="">newsletter</a>
+			<?php endif; ?>
 		</div>
 
 		<br>
 
 		<!-- social media -->
 		<div class="socials__links__container">
-			<a href="#">facebook</a>
-			<a href="#">instagram</a>
-			<a href="#">linkedin</a>
+			<?php if ( get_field('header_facebook', 'option') ): ?>
+				<a href="<?php the_field('header_facebook', 'option'); ?>" target="_blank">facebook</a>
+			<?php endif; ?>
+			<?php if ( get_field('header_instagram', 'option') ): ?>
+				<a href="<?php the_field('header_instagram', 'option'); ?>" target="_blank">instagram</a>
+			<?php endif; ?>
+			<?php if ( get_field('header_linkedin', 'option') ): ?>
+				<a href="<?php the_field('header_linkedin', 'option'); ?>" target="_blank">linkedin</a>
+			<?php endif; ?>
 		</div>
 		<br>
 
 		<!-- credits -->
 		<p>
 			perimetre ©2002
+			<br>
+			development, design and content<br>
+			by périmètre.studio
 		</p>
 
 	</div>
@@ -145,7 +154,7 @@
 </div>
 <div class="menu__projects">
 
-							<?php 
+							<?php
 		$project = new WP_Query(
 			array(
 				'post_type'		=> 'project',
@@ -156,15 +165,15 @@
 		);
 	?>
 
-	<?php if ( $project->have_posts() ) : ?>	
+	<?php if ( $project->have_posts() ) : ?>
 
 		<?php while ( $project->have_posts() ) : $project->the_post(); ?>
 
 			<div class="menu__project__item" data-fx="14"_url>
 				<a href="<?php the_permalink(); ?>" class="lazyload" data-img="<?php the_post_thumbnail_url('thumbnail'); ?>">
 					<h1><?php the_title(); ?></h1>
-					<h4><?php the_terms( get_the_ID() , 'project_type' ); ?></h4>
 				</a>
+			<h4><?php the_terms( get_the_ID() , 'project_type' ); ?></h4>
 			</div>
 
 		<?php endwhile; ?>
