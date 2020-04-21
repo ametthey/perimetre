@@ -1,8 +1,8 @@
 <?php 
 
 function _themename_image_configuration() {
-	// add_image_size( 'cinema', 1920, 1080 ); // ratio 16:9
 	add_image_size( 'presentation', 1440,  1152 ); // image d'introduction pour les pages projets - 5:4
+    // add_image_size( 'square', 636, 999999 );
 	// add_image_size( 'alternative-presentation', 1152, 1440 ); // 4:5
 	// add_image_size( 'home', 1097, 877.60 ); // image for the projects on the home page - 5:4 
 	// add_image_size( 'half', 960, 0 ); // image for composition with two images side by side

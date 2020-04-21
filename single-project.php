@@ -24,14 +24,18 @@
 						<?php if ( $project->have_posts() ) : ?>	
 
 							<?php while ( $project->have_posts() ) : $project->the_post(); ?>
-
-
-						
+								<div class="project__next__link">
+									<?php next_post_link(); ?>
+									<?php get_the_post_thumbnail($post->ID, 'thumbnail' , array( 'class' => 'project__next__thumnail' )); ?>
+									<img src="<?php get_the_post_thumbnail_url('thumbnail'); ?>">
+								</div>
 							<?php endwhile; ?>
 
 							<?php wp_reset_postdata(); ?>
 
 						<?php endif; ?>
+
+						<span class="project__next__project">next project</span>
 
 					</div>
 				</div>

@@ -74,15 +74,6 @@ $video3 = get_field('video3');
 			<?php endif; ?>
 
 		<?php } ?>
-	
-		<!--	
-		<?php if ( $image1 && $image2 && $image3 ) {
-
-				echo wp_get_attachment_image( $image1, 'instagram', false, array('class' => 'img--ratio ') );
-				echo wp_get_attachment_image( $image2, 'instagram', false, array('class' => 'img--ratio') );
-				echo wp_get_attachment_image( $image3, 'instagram', false, array('class' => 'img--ratio') );
-		} ?>
-		-->
 
 	</div>
 </div>

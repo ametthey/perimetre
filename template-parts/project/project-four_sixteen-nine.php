@@ -33,7 +33,7 @@ $image4 = get_field('four_cinema_image_4');
 $video1 = get_field('video1');
 $video2 = get_field('video2');
 $video3 = get_field('video3');
-$video4 = get_field('video3');
+$video4 = get_field('video4');
 ?>
 <!-- COMPOSITION WITH FOUR IMAGES AND RATIO 16:9 -->
 <div class="slide">

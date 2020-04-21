@@ -173,7 +173,16 @@
 				<a href="<?php the_permalink(); ?>" class="lazyload" data-img="<?php the_post_thumbnail_url('thumbnail'); ?>">
 					<h1><?php the_title(); ?></h1>
 				</a>
-			<h4><?php the_terms( get_the_ID() , 'project_type' ); ?></h4>
+			<h4><?php
+			$terms = get_the_terms( $post->ID , 'project_type' );
+
+				foreach ( $terms as $term ) {
+
+				echo $term->name;
+
+				} ?>
+		
+			</h4>
 			</div>
 
 		<?php endwhile; ?>

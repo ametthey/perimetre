@@ -37,7 +37,7 @@ $image4 = get_field('four_square_image_4');
 $video1 = get_field('video1');
 $video2 = get_field('video2');
 $video3 = get_field('video3');
-$video4 = get_field('video3');
+$video4 = get_field('video4');
 ?>
 <!-- COMPOSITION WITH FOUR IMAGES AND RATIO 1:1 -->
 <div class="slide">
@@ -56,7 +56,7 @@ $video4 = get_field('video3');
 					<?php } else { ?>
 
 							<?php if( !empty($image1) ): ?>
-									<?php echo wp_get_attachment_image($image1, 'presentation', false,  array( 'class' => 'img--alternative' )); ?>
+									<?php echo wp_get_attachment_image($image1, 'square', false,  array( 'class' => 'img--alternative' )); ?>
 							<?php endif; ?>
 
 					<?php } ?>
@@ -75,7 +75,7 @@ $video4 = get_field('video3');
 					<?php } else { ?>
 
 							<?php if( !empty($image2) ): ?>
-									<?php echo wp_get_attachment_image($image2, 'presentation', false,  array( 'class' => 'img--alternative' )); ?>
+									<?php echo wp_get_attachment_image($image2, 'square', false,  array( 'class' => 'img--alternative' )); ?>
 							<?php endif; ?>
 
 					<?php } ?>
@@ -99,7 +99,7 @@ $video4 = get_field('video3');
 					<?php } else { ?>
 
 							<?php if( !empty($image3) ): ?>
-									<?php echo wp_get_attachment_image($image3, 'presentation', false,  array( 'class' => 'img--alternative' )); ?>
+									<?php echo wp_get_attachment_image($image3, 'square', false,  array( 'class' => 'img--alternative' )); ?>
 							<?php endif; ?>
 
 					<?php } ?>
@@ -118,7 +118,7 @@ $video4 = get_field('video3');
 					<?php } else { ?>
 
 							<?php if( !empty($image4) ): ?>
-									<?php echo wp_get_attachment_image($image4, 'presentation', false,  array( 'class' => 'img--alternative' )); ?>
+									<?php echo wp_get_attachment_image($image4, 'square', false,  array( 'class' => 'img--alternative' )); ?>
 							<?php endif; ?>
 
 					<?php } ?>

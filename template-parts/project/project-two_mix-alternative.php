@@ -57,7 +57,7 @@ $video2 = get_field('video2');
 
 		</div>
 		<div class="container right">
-		
+
 			<div class="outer_quatre_cinq">
 				<div class="inner">
 					<?php if( $video2 ) { ?>
@@ -77,7 +77,7 @@ $video2 = get_field('video2');
 				</div>
 			</div>
 
-		</div>	
+		</div>
 
 	</div>
 </div>

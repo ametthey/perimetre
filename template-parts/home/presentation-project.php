@@ -37,7 +37,7 @@ $annee = get_field('home_annee');
 $link = get_field('home_link');
 ?>
 	<!-- presentation project -->
-	<div id="<?php echo $id; ?>" class="slide slide__project">
+	<div class="slide slide__project">
 		<div class="section__presentation__project">
 			<div class="presentation__project__image">
 				<div class="outer">
