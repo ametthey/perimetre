@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="site">
+    <div class="site">
 		<div id="section--horizontal">
 
 
@@ -7,7 +7,7 @@
 
 				<?php the_content(); ?>
 
-				<!-- NEXT -->
+				<!-- NEXT
 				<div class="slide slide-next">
 					<div class="project__next">
 						<?php
@@ -21,13 +21,12 @@
 							);
 						?>
 
-						<?php if ( $project->have_posts() ) : ?>	
+						<?php if ( $project->have_posts() ) : ?>
 
 							<?php while ( $project->have_posts() ) : $project->the_post(); ?>
 								<div class="project__next__link">
 									<?php next_post_link(); ?>
-									<?php get_the_post_thumbnail($post->ID, 'thumbnail' , array( 'class' => 'project__next__thumnail' )); ?>
-									<img src="<?php get_the_post_thumbnail_url('thumbnail'); ?>">
+                                    <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) ); ?>
 								</div>
 							<?php endwhile; ?>
 
@@ -41,6 +40,8 @@
 				</div>
 
 			<?php endwhile; endif; ?>
+
+            -->
 
 			<!-- slide next / prev -->
 				<div class="slider-next"></div>
