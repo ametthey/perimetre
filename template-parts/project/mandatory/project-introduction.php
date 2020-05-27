@@ -1,7 +1,7 @@
 <?php
 
 /**
- *  Introduction Project Block Template.
+ *  Credit  Project Block Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).

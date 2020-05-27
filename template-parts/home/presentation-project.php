@@ -42,15 +42,19 @@ $link = get_field('home_link');
 			<div class="presentation__project__image">
 				<div class="outer">
 					<div class="inner">
-						<?php 
+						<?php
 							$image = get_field('home_image');
 							$size = 'presentation';
 						?>
-		
-						<img src="<?php echo $image; ?>" class="img--ratio lazyload">
-						<video class="video--cinema" autoplay muted loop playsinline preload="auto">
-							<source type="video/mp4" src="<?php echo $video; ?>"></source>
-						</video>
+
+                        <a href="<?php echo $link; ?>">
+                            <img src="<?php echo $image; ?>" class="img--ratio lazyload">
+                        </a>
+                        <a href="<?php echo $link; ?>">
+                            <video class="video--cinema" autoplay muted loop playsinline preload="auto">
+                                <source type="video/mp4" src="<?php echo $video; ?>"></source>
+                            </video>
+                        </a>
 					</div>
 				</div>
 			</div>

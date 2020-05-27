@@ -1,11 +1,11 @@
 {
-    "key": "group_5e95c440db9d9",
-    "title": "Project: Composition avec 4 images au format carré",
+    "key": "group_5ecb93d835419",
+    "title": "Project: Composition avec 2 images en 1:1",
     "fields": [
         {
-            "key": "field_5e95c455ba787",
-            "label": "Image #1",
-            "name": "four_square_image_1",
+            "key": "field_5ecb93d83a67b",
+            "label": "Image de gauche",
+            "name": "instagram_1",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -27,8 +27,8 @@
             "mime_types": ""
         },
         {
-            "key": "field_5e9c63cf9afa2",
-            "label": "Vidéo #1",
+            "key": "field_5ecb93d83a6ab",
+            "label": "Vidéo de gauche",
             "name": "video1",
             "type": "audio_video_player",
             "instructions": "",
@@ -39,7 +39,7 @@
                 "class": "",
                 "id": ""
             },
-            "general_type": "both",
+            "general_type": "video",
             "mime_types": "",
             "return_format": "url",
             "library": "all",
@@ -47,9 +47,28 @@
             "max_size": ""
         },
         {
-            "key": "field_5e95c516fbbb3",
-            "label": "Image #2",
-            "name": "four_square_image_2",
+            "key": "field_5ece6d6c2fc1f",
+            "label": "Texte de gauche",
+            "name": "text_left",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ecb93d83a6d6",
+            "label": "Image de droite",
+            "name": "instagram_2",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -71,8 +90,8 @@
             "mime_types": ""
         },
         {
-            "key": "field_5e9c63dd6b940",
-            "label": "Vidéo #2",
+            "key": "field_5ecb93d83a709",
+            "label": "Vidéo de droite",
             "name": "video2",
             "type": "audio_video_player",
             "instructions": "",
@@ -83,7 +102,7 @@
                 "class": "",
                 "id": ""
             },
-            "general_type": "both",
+            "general_type": "video",
             "mime_types": "",
             "return_format": "url",
             "library": "all",
@@ -91,10 +110,10 @@
             "max_size": ""
         },
         {
-            "key": "field_5e95c51ad3a78",
-            "label": "Image #3",
-            "name": "four_square_image_3",
-            "type": "image",
+            "key": "field_5ece6d60f7fcb",
+            "label": "Texte de droite",
+            "name": "text_right",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -103,80 +122,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "id",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5e9c63e42df52",
-            "label": "Vidéo #3",
-            "name": "video3",
-            "type": "audio_video_player",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "general_type": "both",
-            "mime_types": "",
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": ""
-        },
-        {
-            "key": "field_5e95c51daec9f",
-            "label": "Image #4",
-            "name": "four_square_image_4",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5e9c63ec1d1a3",
-            "label": "Vidéo #4",
-            "name": "video4",
-            "type": "audio_video_player",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "general_type": "both",
-            "mime_types": "",
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": ""
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -184,7 +134,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/quatre-carre"
+                "value": "acf\/two-one-one"
             }
         ]
     ],
@@ -193,8 +143,23 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1587724639
+    "modified": 1590586993
 }

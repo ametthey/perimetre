@@ -47,26 +47,6 @@
             "max_size": ""
         },
         {
-            "key": "field_5e9c94b9fb37f",
-            "label": "Vidéo2",
-            "name": "video2",
-            "type": "audio_video_player",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "general_type": "video",
-            "mime_types": "",
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": ""
-        },
-        {
             "key": "field_5e9881adec0a2",
             "label": "Image2",
             "name": "instagram_2",
@@ -89,6 +69,26 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5e9c94b9fb37f",
+            "label": "Vidéo2",
+            "name": "video2",
+            "type": "audio_video_player",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "general_type": "video",
+            "mime_types": "",
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": ""
         },
         {
             "key": "field_5e9881adec0cf",
@@ -152,5 +152,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1587320021
+    "modified": 1587724685
 }
