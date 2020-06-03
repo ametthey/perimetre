@@ -49,6 +49,27 @@ get_header(); ?>
                         <?php if ( get_field('footer_newsletter', 'option') ): ?>
                             <a class="about__link" href="<?php the_field('footer_newsletter', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">newsletter</a>
                         <?php endif; ?>
+
+                        <!-- Begin Mailchimp Signup Form -->
+                        <div id="mc_embed_signup">
+                        <form action="https://studio.us19.list-manage.com/subscribe/post?u=8beb8d988a3674a70fac50bcd&amp;id=4fede95bdd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Email Address </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <!-- <div style="position: absolute; left: &#45;5000px;" aria&#45;hidden="true"><input type="text" name="b_8beb8d988a3674a70fac50bcd_4fede95bdd" tabindex="&#45;1" value=""></div> -->
+                            <!-- <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc&#45;embedded&#45;subscribe" class="button"></div> -->
+                            <!-- </div> -->
+                        </form>
+                        </div>
+
+                        <!--End mc_embed_signup-->
                     </div>
                 </div>
                 <div class="section__footer__arrow">

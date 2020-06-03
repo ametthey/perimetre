@@ -51,7 +51,7 @@ get_header(); ?>
                     </div>
                     <div class="about__links__container">
                         <?php if ( get_field('footer_newsletter', 'option') ): ?>
-                            <a class="about__link" href="<?php the_field('footer_newsletter', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">newsletter</a>
+                            <a class="about__link" href="<?php the_field('footer_newsletter', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow-right.svg" alt="">newsletter</a>
                         <?php endif; ?>
                     </div>
                 </div>
