@@ -1,17 +1,17 @@
 {
-    "key": "group_5ec2a14dd1357",
-    "title": "Project : Credit du project",
+    "key": "group_5e946de98d909",
+    "title": "Project: Crédit du Project",
     "fields": [
         {
-            "key": "field_5ec2a2f95d6cf",
-            "label": "image",
-            "name": "image",
+            "key": "field_5e946de992be4",
+            "label": "Image du projet",
+            "name": "credit_image",
             "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -23,13 +23,13 @@
             "min_size": "",
             "max_width": "",
             "max_height": "",
-            "max_size": "",
+            "max_size": 500,
             "mime_types": ""
         },
         {
-            "key": "field_5ec2a3095d6d0",
-            "label": "credit",
-            "name": "credit",
+            "key": "field_5e946de992ca0",
+            "label": "creditor",
+            "name": "credit_person",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -39,8 +39,8 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
+            "default_value": "Motion Design. Baptiste Renault",
+            "tabs": "visual",
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0
@@ -51,7 +51,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/credit"
+                "value": "acf\/project-credit"
             }
         ]
     ],

@@ -25,13 +25,6 @@ if ( ! empty( $block['align'] ) ) {
     $classes .= ' align' . $block['align'];
 }
 ?>
-
-<!-- <style type="text/css"> -->
-<!-- <?php echo '#' . $id; ?> { -->
-<!--     /* Add styles that use ACF values here */ -->
-<!-- } -->
-<!-- </style> -->
-
 <!-- CREDIT #2-->
 <div class="slide">
 	<div class="project__credit">

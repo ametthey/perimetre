@@ -167,7 +167,7 @@
         "page_attributes",
         "send-trackbacks"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1590397917
+    "modified": 1591783996
 }

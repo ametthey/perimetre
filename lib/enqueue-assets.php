@@ -26,6 +26,16 @@ function _themename_admin_assets() {
 
 add_action('admin_enqueue_scripts', '_themename_admin_assets');
 
+/***********************************************************************
+ *
+ * Remove Inline style from twenty twenty
+ *
+ ***********************************************************************/
+
+add_action( 'wp_enqueue_scripts', function() {
+	$styles = wp_styles();
+	$styles->add_data( 'twentytwenty-style', 'after', array() );
+}, 20 );
 
 
 /***********************************************************************

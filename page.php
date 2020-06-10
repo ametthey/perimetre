@@ -1,6 +1,5 @@
 <?php
 get_header(); ?>
-<div class="site">
 
     <div id="section--vertical">
 
@@ -81,7 +80,7 @@ get_header(); ?>
 
     </div>
 
-</div>
+<!-- </div> -->
 
 
 <?php get_footer(); ?>
