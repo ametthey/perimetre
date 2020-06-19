@@ -33,7 +33,7 @@ $video2 = get_field('video2');
 $video3 = get_field('video3');
 ?>
 <!-- PERFECT THREE | INSTAGRAM  -->
-<div class="slide">
+<div class="slide swiper-slide">
 	<div class="project__container__nine_sixteen">
 		<?php if( $video1 ) { ?>
 

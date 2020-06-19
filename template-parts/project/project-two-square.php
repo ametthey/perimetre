@@ -31,7 +31,7 @@ $video1 = get_field('video1');
 $video2 = get_field('video2');
 ?>
 <!-- COMPOSITION WITH TWO IMAGES : 1:1 + 1:1-->
-<div class="slide">
+<div class="slide swiper-slide">
 	<div class="project__container_two_square">
 		<div class="container left">
 
@@ -52,7 +52,6 @@ $video2 = get_field('video2');
 						<?php endif; ?>
 
 					<?php } ?>
-                    <p><?php the_field( 'text_left' ); ?></p>
 			<!-- 	</div> -->
 			<!-- </div> -->
 
@@ -74,12 +73,12 @@ $video2 = get_field('video2');
 						<?php endif; ?>
 
 					<?php } ?>
-                    <p><?php the_field( 'text_right' ); ?></p>
 
 			<!-- 	</div> -->
 			<!-- </div> -->
 
 		</div>
 
+        <p class="template__text__center"><?php the_field( 'text_center' ); ?></p>
 	</div>
 </div>

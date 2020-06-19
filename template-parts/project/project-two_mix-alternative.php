@@ -31,7 +31,7 @@ $video1 = get_field('video1');
 $video2 = get_field('video2');
 ?>
 <!-- COMPOSITION WITH TWO IMAGES : 16:9 on the left + 4:5 on the right -->
-<div class="slide">
+<div class="slide swiper-slide">
 	<div class="project__container_three_mix_alternative">
 		<div class="container left">
 

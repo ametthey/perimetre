@@ -26,7 +26,7 @@ if ( ! empty( $block['align'] ) ) {
 }
 ?>
 <!-- CREDIT #2-->
-<div class="slide">
+<div class="slide swiper-slide">
 	<div class="project__credit">
 		<!-- IMAGE -->
 		<div class="project__credit__image">

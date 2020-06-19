@@ -18,142 +18,158 @@
             <meta charset="<?php bloginfo( 'charset' ); ?>">
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="profile" href="https://gmpg.org/xfn/11" />
-            <title><?php wp_title(); ?></title>
+            <title><?php wp_title('the title'); ?></title>
             <?php wp_head(); ?>
     </head>
     <body <?php body_class() ?> >
 
-        <header>
-            <h4 class="header__title" id="projects">
-                Project
-            </h4>
+        <!-- right arrow -->
+        <svg id="custom-cursor" width="120.422" height="67.164">
+            <defs>
+                <style>
+                    .a{
+                        fill:none;
+                        stroke:#fff;
+                        stroke-width:4px
+                    }
+                </style>
+            </defs>
 
-            <h4 class="header__title"><a href="<?php echo get_home_url(); ?>">Périmètre</a></h4>
-
-            <h4 class="header__title" id="about">
-                About
-            </h4>
-        </header>
-
-        <div class="menu__about">
-
-            <div class="menu__about__presentation">
-                <h2><?php echo get_field('header_presentation', 'option'); ?></h2>
-
-            </div>
-            <div class="menu__about__contact">
-                <h5><?php echo get_field('header_contact', 'option'); ?></h5>
-
-                <!-- separator -->
-                <div class="separator"></div>
+            <path class="a" d="M85.425 1.414l32.168 32.168L85.425 65.75M117.593 33.582H-.001"/>
+        </svg>
 
 
-                <!-- contact -->
-                <i>contact</i><br>
-                <h5>
-                    <b>
-                        <a href="mailto:bonjour@perimetre.studio">
-                            bonjour@perimetre.studio
-                        </a>
-                    </b>
-                </h5>
+            <header>
+                <h4 class="header__title" id="projects">
+                    Project
+                </h4>
 
-                <!-- albin -->
-                <i>albin</i>
-                <br>
-                <h5>
-                    <b>
-                        <a href="mailto:albin@perimetre.studio">
-                            Albin@perimetre.studio
-                        </a>
-                    </b><br>
-                    <b>
-                        <a href="tel:0033782973054">
-                            +33 (7) 82 97 30 54
-                        </a>
-                    </b>
-                </h5>
+                <h4 class="header__title"><a href="<?php echo get_home_url(); ?>">Périmètre</a></h4>
 
-                <!-- hugo -->
-                <i>hugo</i>
-                <br>
-                <h5>
-                    <b>
-                        <a href="mailto:hugo@perimetre.studio">
-                            hugo@perimetre.studio
-                        </a>
-                    </b><br>
-                    <b>
-                        <a href="tel:0033669614033">
-                            +33 (6) 69 61 40 33
-                        </a>
-                    </b>
-                </h5>
+                <h4 class="header__title" id="about">
+                    About
+                </h4>
+            </header>
 
-                <!-- camille -->
-                <i>camille</i>
-                <br>
-                <h5>
-                    <b>
-                        <a href="mailto:camille@perimetre.studio">
-                            camille@perimetre.studio
-                        </a>
-                    </b><br>
-                    <b>
-                        <a href="tel:0033669614033">
-                            +33 (6) 69 61 40 33
-                        </a>
-                    </b>
-                </h5>
+            <div class="menu__about">
 
-                <!-- adresse -->
-                <i>adress</i>
-                <br>
-                <h5>
-                    <b>
-                        74 rue des martyrs 75018 – Paris
-                    </b>
-                </h5>
-                <br>
+                <div class="menu__about__presentation">
+                    <h2><?php echo get_field('header_presentation', 'option'); ?></h2>
 
-                <div class="about__links__container">
-                    <?php if ( get_field('header_portfolio', 'option') ):?>
-                    <a class="about__link" href="<?php the_field('header_portfolio', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">download portfolio</a>
-                    <?php endif; ?>
-
-                    <?php if ( get_field('header_newsletter', 'option') ): ?>
-                    <a class="about__link" href="<?php the_field('header_newsletter', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">newsletter</a>
-                    <?php endif; ?>
                 </div>
+                <div class="menu__about__contact">
+                    <h5><?php echo get_field('header_contact', 'option'); ?></h5>
 
-                <br>
+                    <!-- separator -->
+                    <div class="separator"></div>
 
-                <!-- social media -->
-                <div class="socials__links__container">
-                    <?php if ( get_field('header_facebook', 'option') ): ?>
-                    <a href="<?php the_field('header_facebook', 'option'); ?>" target="_blank">facebook</a>
-                    <?php endif; ?>
-                    <?php if ( get_field('header_instagram', 'option') ): ?>
-                    <a href="<?php the_field('header_instagram', 'option'); ?>" target="_blank">instagram</a>
-                    <?php endif; ?>
-                    <?php if ( get_field('header_linkedin', 'option') ): ?>
-                    <a href="<?php the_field('header_linkedin', 'option'); ?>" target="_blank">linkedin</a>
-                    <?php endif; ?>
-                </div>
-                <br>
 
-                <!-- credits -->
-                <p>
-                    perimetre ©2002
+                    <!-- contact -->
+                    <i>contact</i><br>
+                    <h5>
+                        <b>
+                            <a href="mailto:bonjour@perimetre.studio">
+                                bonjour@perimetre.studio
+                            </a>
+                        </b>
+                    </h5>
+
+                    <!-- albin -->
+                    <i>albin</i>
                     <br>
-                    development, design and content<br>
-                    by périmètre.studio
-                </p>
+                    <h5>
+                        <b>
+                            <a href="mailto:albin@perimetre.studio">
+                                Albin@perimetre.studio
+                            </a>
+                        </b><br>
+                        <b>
+                            <a href="tel:0033782973054">
+                                +33 (7) 82 97 30 54
+                            </a>
+                        </b>
+                    </h5>
+
+                    <!-- hugo -->
+                    <i>hugo</i>
+                    <br>
+                    <h5>
+                        <b>
+                            <a href="mailto:hugo@perimetre.studio">
+                                hugo@perimetre.studio
+                            </a>
+                        </b><br>
+                        <b>
+                            <a href="tel:0033669614033">
+                                +33 (6) 69 61 40 33
+                            </a>
+                        </b>
+                    </h5>
+
+                    <!-- camille -->
+                    <i>camille</i>
+                    <br>
+                    <h5>
+                        <b>
+                            <a href="mailto:camille@perimetre.studio">
+                                camille@perimetre.studio
+                            </a>
+                        </b><br>
+                        <b>
+                            <a href="tel:0033669614033">
+                                +33 (6) 69 61 40 33
+                            </a>
+                        </b>
+                    </h5>
+
+                    <!-- adresse -->
+                    <i>adress</i>
+                    <br>
+                    <h5>
+                        <b>
+                            74 rue des martyrs 75018 – Paris
+                        </b>
+                    </h5>
+                    <br>
+
+                    <div class="about__links__container">
+                        <?php if ( get_field('header_portfolio', 'option') ):?>
+                        <a class="about__link" href="<?php the_field('header_portfolio', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">download portfolio</a>
+                        <?php endif; ?>
+
+                        <?php if ( get_field('header_newsletter', 'option') ): ?>
+                        <a class="about__link" href="<?php the_field('header_newsletter', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">newsletter</a>
+                        <?php endif; ?>
+                    </div>
+
+                    <br>
+
+                    <!-- social media -->
+                    <div class="socials__links__container">
+                        <?php if ( get_field('header_facebook', 'option') ): ?>
+                        <a href="<?php the_field('header_facebook', 'option'); ?>" target="_blank">facebook</a>
+                        <?php endif; ?>
+                        <?php if ( get_field('header_instagram', 'option') ): ?>
+                        <a href="<?php the_field('header_instagram', 'option'); ?>" target="_blank">instagram</a>
+                        <?php endif; ?>
+                        <?php if ( get_field('header_linkedin', 'option') ): ?>
+                        <a href="<?php the_field('header_linkedin', 'option'); ?>" target="_blank">linkedin</a>
+                        <?php endif; ?>
+                    </div>
+                    <br>
+
+                    <!-- credits -->
+                    <p>
+                        perimetre ©2002
+                        <br>
+                        development, design and content<br>
+                        by périmètre.studio
+                    </p>
+
+                </div>
 
             </div>
-
-        </div>
-        <div class="menu__projects">
+            <div class="menu__projects">
 
 <?php
 $project = new WP_Query(
@@ -190,6 +206,6 @@ foreach ( $terms as $term ) {
 <?php wp_reset_postdata(); ?>
 
 <?php endif; ?>
-        </div>
+            </div>
 
-        <div class="site transition-fade" id="swup-in">
+            <div class="site swiper-container transition-fade" id="swup">

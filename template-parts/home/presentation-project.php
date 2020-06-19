@@ -46,15 +46,19 @@ $link = get_field('home_link');
 							$image = get_field('home_image');
 							$size = 'presentation';
 						?>
+                        <?php if( $video ) { ?>
+                            <a href="<?php echo $link; ?>">
+                                <video class="video--cinema" autoplay muted loop playsinline preload="auto">
+                                    <source type="video/mp4" src="<?php echo $video; ?>"></source>
+                                </video>
+                            </a>
+                        <?php } else { ?>
 
-                        <a href="<?php echo $link; ?>">
-                            <img src="<?php echo $image; ?>" class="img--ratio lazyload">
-                        </a>
-                        <a href="<?php echo $link; ?>">
-                            <video class="video--cinema" autoplay muted loop playsinline preload="auto">
-                                <source type="video/mp4" src="<?php echo $video; ?>"></source>
-                            </video>
-                        </a>
+                            <a href="<?php echo $link; ?>">
+                                <img src="<?php echo $image; ?>" class="img--ratio lazyload">
+                            </a>
+
+                        <?php } ?>
 					</div>
 				</div>
 			</div>

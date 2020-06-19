@@ -29,7 +29,7 @@ $image = get_field('fullscreen');
 $video = get_field('video');
 ?>
 <!-- FULLSCREEN -->
-<div class="slide">
+<div class="slide swiper-slide">
 	<div class="project__container__fullscreen">
 		<?php if( $video ) { ?>
 

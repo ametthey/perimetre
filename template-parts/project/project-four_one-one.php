@@ -40,7 +40,7 @@ $video3 = get_field('video3');
 $video4 = get_field('video4');
 ?>
 <!-- COMPOSITION WITH FOUR IMAGES AND RATIO 1:1 -->
-<div class="slide">
+<div class="slide swiper-slide ">
 	<div class="project__container_four_one_one">
 		<!-- left container -->
 		<div class="container left">

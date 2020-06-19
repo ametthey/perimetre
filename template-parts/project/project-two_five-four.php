@@ -31,12 +31,12 @@ $video1 = get_field('video1');
 $video2 = get_field('video2');
 ?>
 <!-- PERFECT TWO | 5:4 -->
-<div class="slide" id="two_five-four">
+<div class="slide swiper-slide" id="two_five-four">
 	<div class="project__container__two">
-		
+
 		<!-- left container -->
 		<div class="container left">
-		
+
 			<div class="outer">
 				<div class="inner">
 					<?php if( $video1 ) { ?>
@@ -55,7 +55,7 @@ $video2 = get_field('video2');
 				</div>
 			</div>
 
-		</div>	
+		</div>
 
 		<!-- right container -->
 		<div class="container right">

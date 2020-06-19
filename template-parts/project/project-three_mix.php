@@ -33,11 +33,11 @@ $video2 = get_field('video2');
 $video3 = get_field('video3');
 ?>
 <!-- COMPOSITION WITH THREE IMAGES  -->
-<div class="slide">
+<div class="slide swiper-slide">
 	<div class="project__container_three_mix_sixteen_nine">
 		<!-- left container -->
 		<div class="container left">
-		
+
 			<div class="outer_quatre_cinq">
 				<div class="inner">
 					<?php if( $video1 ) { ?>
@@ -56,7 +56,7 @@ $video3 = get_field('video3');
 				</div>
 			</div>
 
-		</div>	
+		</div>
 
 		<!-- right container -->
 		<div class="container right">

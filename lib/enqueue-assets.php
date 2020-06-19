@@ -26,6 +26,12 @@ function _themename_admin_assets() {
 
 add_action('admin_enqueue_scripts', '_themename_admin_assets');
 
+function _themename_login_assets() {
+    wp_enqueue_style( '_themename-login-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/login.css', array(), '1.0.0', 'all' );
+}
+
+add_action('login_enqueue_scripts', '_themename_login_assets');
+
 /***********************************************************************
  *
  * Remove Inline style from twenty twenty

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="section--horizontal">
+<div id="section--horizontal" class="swiper-wrapper">
 
     <?php if ( have_posts()  ) : while ( have_posts() ) : the_post(); ?>
 
@@ -10,10 +10,11 @@
     <?php endwhile; endif; ?>
 
     <!-- slide next / prev -->
-    <div class="slider-next"></div>
-    <div class="slider-prev"></div>
+    <!-- <div class="slider&#45;next"></div> -->
+    <!-- <div class="slider&#45;prev"></div> -->
 
 </div>
+
 
 <!-- slide count -->
 <div class="slide-counter">

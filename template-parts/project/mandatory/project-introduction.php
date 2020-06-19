@@ -36,7 +36,7 @@ $categorie = get_field('project_categorie');
 $annee = get_field('project_annee');
 ?>
 	<!-- INTRODUCTION -->
-	<div id="<?php echo $id; ?>" class="slide">
+	<div id="<?php echo $id; ?>" class="slide swiper-slide">
 	<div class="project__presentation">
 		<!-- TEXTE -->
 		<div class="project__presentation__texte">

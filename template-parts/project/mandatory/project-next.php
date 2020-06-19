@@ -1,5 +1,5 @@
 <!-- NEXT -->
-<div class="slide slide-next">
+<div class="slide swiper-slide slide-next">
     <div class="project__next">
         <?php
 
