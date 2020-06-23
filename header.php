@@ -24,7 +24,7 @@
     <body <?php body_class() ?> >
 
         <!-- right arrow -->
-        <svg id="custom-cursor" width="120.422" height="67.164">
+        <svg id="custom-cursor" width="80" height="67.164">
             <defs>
                 <style>
                     .a{

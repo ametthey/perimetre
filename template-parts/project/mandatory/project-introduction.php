@@ -11,6 +11,7 @@
 
 // Create id attribute allowing for custom "anchor" value.
 $id = 'introduction-project';
+$class = 'introduction-project';
 
 if( !empty($block['anchor']) ) {
 	$id = $block['anchor'];
@@ -36,7 +37,7 @@ $categorie = get_field('project_categorie');
 $annee = get_field('project_annee');
 ?>
 	<!-- INTRODUCTION -->
-	<div id="<?php echo $id; ?>" class="slide swiper-slide">
+	<div id="<?php echo $id; ?>" class="slide swiper-slide introduction-project">
 	<div class="project__presentation">
 		<!-- TEXTE -->
 		<div class="project__presentation__texte">
