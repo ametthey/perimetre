@@ -3,7 +3,6 @@
  * Template Name: Home
  */
 get_header(); ?>
-
 <div class="site">
 
     <div id="section--vertical">

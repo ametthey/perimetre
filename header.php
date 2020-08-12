@@ -24,7 +24,7 @@
     <body <?php body_class() ?> >
 
         <!-- right arrow -->
-        <svg id="custom-cursor" width="80" height="67.164">
+        <svg id="custom-cursor" width="120.422" height="67.164">
             <defs>
                 <style>
                     .a{
@@ -208,4 +208,5 @@ foreach ( $terms as $term ) {
 <?php endif; ?>
             </div>
 
-            <div class="site swiper-container transition-fade" id="swup">
+
+            <!-- <div class="site swiper&#45;container transition&#45;fade" id="swup"> -->
