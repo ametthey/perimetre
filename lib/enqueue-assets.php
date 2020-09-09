@@ -11,6 +11,7 @@
 function _themename_assets() {
 	wp_enqueue_style( '_themename-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/bundle.css', array(), '1.0.0' ,  'all' );
 
+    // THIS IS FOR PRODUCTION
 	wp_enqueue_script( '_themename-tween-max' , 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js' , array(), '1.0.1', 'true' );
 
 	wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/main.js', array(), '1.0.1' ,   true );
