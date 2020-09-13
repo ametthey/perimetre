@@ -44,7 +44,7 @@ if ( ! empty( $block['align'] ) ) {
 		<div class="project__credit__texte">
 
 			<div class="credit__texte__wrapper__information">
-				<p><i>CREDITS</i></p>
+				<p>CREDITS</p>
 				<div class="separator"></div>
 					<div class="creditor">
 						<h5><?php the_field( 'credit' ); ?></h5>

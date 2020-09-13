@@ -49,15 +49,15 @@ $annee = get_field('project_annee');
 			<div class="presentation__texte__wrapper__information">
 				<div class="separator"></div>
 				<div class="presentation__texte__item__information presentation__texte__item--client">
-					<p><i>Client</i></p>
+					<p>Client</p>
 					<h5><b><?php echo $client; ?></b></h5>
 				</div>
 				<div class="presentation__texte__item__information presentation__texte__item--year">
-					<p><i>Year</i></p>
+					<p>Year</p>
 					<h5><b><?php echo $annee; ?></b></h5>
 				</div>
 				<div class="presentation__texte__item__information presentation__texte__item--categorie">
-					<p><i>catégorie</i></p>
+					<p>catégorie</p>
 					<h5><b><?php echo $categorie; ?></b></h5>
 				</div>
 			</div>

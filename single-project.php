@@ -17,7 +17,7 @@
     <!-- slide count -->
     <div class="slide-counter">
         <span class="current-slide"></span>
-        <span>–</span>
+        <span>&#x2014;</span>
         <span class="total-slide"></span>
     </div>
 
