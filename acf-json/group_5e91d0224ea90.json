@@ -63,7 +63,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": ""
+            "maxlength": 20
         },
         {
             "key": "field_5e9589584a53f",
@@ -178,7 +178,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1591783995
+    "modified": 1600415585
 }

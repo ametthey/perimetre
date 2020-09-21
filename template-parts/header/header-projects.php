@@ -24,7 +24,7 @@
             <?php
                 $terms = get_the_terms( $post->ID , 'project_type', array('number' => 3) );
                 foreach ( $terms as $term ) {
-                    echo '<span class="menu__project__item__category">'. $term->name . '</span><span>-</span>';
+                    echo '<span class="menu__project__item__category">'. $term->name . '</span> <span>-</span> ';
                 }
             ?>
         </h4>

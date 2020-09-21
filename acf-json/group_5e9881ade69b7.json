@@ -133,6 +133,25 @@
             "library": "all",
             "min_size": "",
             "max_size": ""
+        },
+        {
+            "key": "field_5f64d0eff0ea7",
+            "label": "Texte central",
+            "name": "text_center",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -150,7 +169,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1591783996
+    "modified": 1600442620
 }

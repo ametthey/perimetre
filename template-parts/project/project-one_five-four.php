@@ -29,7 +29,7 @@ $image = get_field('perfect_one');
 $video = get_field('video');
 ?>
 <!-- PERFECT ONE | 5:4 -->
-<div class="slide swiper-slide">
+<div class="slide swiper-slide slide-one">
 	<div class="project__container__one">
 		<?php if( $video ) { ?>
 
@@ -45,4 +45,5 @@ $video = get_field('video');
 
 		<?php } ?>
 	</div>
+    <p class="template__text__center"><?php the_field( 'text_center' ); ?></p>
 </div>

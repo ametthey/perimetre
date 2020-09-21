@@ -126,6 +126,8 @@ $video4 = get_field('video4');
 			</div>
 
 		</div>
+
+        <p class="template__text__center"><?php the_field( 'text_center' ); ?></p>
 	</div>
 </div>
 

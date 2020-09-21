@@ -63,7 +63,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": ""
+            "maxlength": 20
         },
         {
             "key": "field_5e9466706a19c",
@@ -167,7 +167,7 @@
         "page_attributes",
         "send-trackbacks"
     ],
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1591783996
+    "modified": 1600415601
 }
