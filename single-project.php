@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="site swiper-container transition-fade" id="swup">
+<div class="site swiper-container">
     <div id="section--horizontal" class="swiper-wrapper">
 
         <?php if ( have_posts()  ) : while ( have_posts() ) : the_post(); ?>
