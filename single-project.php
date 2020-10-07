@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header( 'project' ); ?>
 <div class="site swiper-container">
     <div id="section--horizontal" class="swiper-wrapper">
 

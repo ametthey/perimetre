@@ -24,6 +24,20 @@
     <body <?php body_class() ?> >
         <!-- right arrow -->
             <!-- right arrow -->
+        <svg id="custom-cursor" width="120.422" height="67.164">
+            <defs>
+                <style>
+                    .a{
+                        fill:none;
+                        stroke:#fff;
+                        stroke-width:4px
+                    }
+                </style>
+            </defs>
+
+            <path class="a" d="M85.425 1.414l32.168 32.168L85.425 65.75M117.593 33.582H-.001"/>
+        </svg>
+
 
         <header>
             <h4 class="header__title" id="projects">
