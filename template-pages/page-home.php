@@ -16,7 +16,11 @@ get_header(); ?>
                     <source type="video/mp4" src="<?php echo get_field('home_background_video'); ?>"></source>
                 </video>
 
-                <h1 class="home__sentence__presentation">creative studio <br>based in paris</h1>
+                <h1 class="home__sentence__presentation">
+                    Perimetre Studo<br>
+                    is a creative<br>
+                    based <span>in</span> paris
+                </h1>
 
                 <button type="button" class="js-trigger">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/chevron.svg" alt="">
