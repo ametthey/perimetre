@@ -1,45 +1,14 @@
 <?php
-/**
-
-
-
-
-
- *  Quatre image au format carré Block Template.
- *
- * @param   array $block The block settings and attributes.
- * @param   string $content The block inner HTML (empty).
- * @param   bool $is_preview True during AJAX preview.
- * @param   (int|string) $post_id The post ID this block is saved to.
- */
-
-// Create id attribute allowing for custom "anchor" value.
-$id = 'four_one_one';
-
-if( !empty($block['anchor']) ) {
-	$id = $block['anchor'];
-}
-
-// Create class attribute allowing for custom "className" and "align" values.
-$className = 'four_one_one';
-if( !empty($block['className']) ) {
-	$className .= ' ' . $block['className'];
-}
-if( !empty($block['align']) ) {
-	$className .= ' align' . $block['align'];
-}
-
-// Load values and assign defaults.
-$image1 = get_field('four_square_image_1');
-$image2 = get_field('four_square_image_2');
-$image3 = get_field('four_square_image_3');
-$image4 = get_field('four_square_image_4');
-$video1 = get_field('video1');
-$video2 = get_field('video2');
-$video3 = get_field('video3');
-$video4 = get_field('video4');
+    $image1 = get_field('four_square_image_1');
+    $image2 = get_field('four_square_image_2');
+    $image3 = get_field('four_square_image_3');
+    $image4 = get_field('four_square_image_4');
+    $video1 = get_field('video1');
+    $video2 = get_field('video2');
+    $video3 = get_field('video3');
+    $video4 = get_field('video4');
 ?>
-<!-- COMPOSITION WITH FOUR IMAGES AND RATIO 1:1 -->
+
 <div class="slide swiper-slide ">
 	<div class="project__container_four_one_one">
 		<!-- left container -->
