@@ -43,7 +43,7 @@ $annee = get_field('project_annee');
 		<div class="project__presentation__texte">
 			<div class="presentation__texte__wrapper__summary">
 			<h2><?php echo $title; ?></h2>
-			<h4><?php echo $description; ?></h4>
+			<h5><?php echo $description; ?></h5>
 			</div>
 
 			<div class="presentation__texte__wrapper__information">
