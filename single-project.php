@@ -1,28 +1,23 @@
 <?php get_header( 'project' ); ?>
-<div class="site swiper-container">
-    <div id="section--horizontal" class="swiper-wrapper">
 
-        <?php if ( have_posts()  ) : while ( have_posts() ) : the_post(); ?>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
 
-        <?php the_content(); ?>
+            <?php
+                if ( have_posts() ) :
+                    while ( have_posts() ) : the_post();
 
-        <?php get_template_part('template-parts/project/mandatory/project-next'); ?>
+                        the_content();
 
-        <?php endwhile; endif; ?>
+                        get_template_part('template-parts/project/mandatory/project-next');
 
-
+                    endwhile;
+                endif;
+            ?>
+        </div>
     </div>
 
-
-    <!-- slide count -->
-    <div class="slide-counter">
-        <span class="current-slide"></span>
-        <span>&#x2014;</span>
-        <span class="total-slide"></span>
-    </div>
-
-
-</div>
-</div>
+    <!-- </div> -->
+<!-- </div> -->
 
 <?php get_footer(); ?>

@@ -35,4 +35,3 @@
 
     <?php endif; ?>
 </div>
-            <!-- <div class="site swiper&#45;container transition&#45;fade" id="swup"> -->
