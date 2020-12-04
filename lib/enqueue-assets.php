@@ -14,6 +14,12 @@ function _themename_assets() {
     // THIS IS FOR PRODUCTION
 	wp_enqueue_script( '_themename-tween-max' , 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js' , array(), '1.0.1', 'true' );
 
+    // THIS IS FOR PRODUCTION
+	wp_enqueue_script( '_themename-lottie-player' , 'https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js' , array(), '1.0.1', 'true' );
+
+    // THIS IS FOR PRODUCTION
+	wp_enqueue_script( '_themename-lottie-interactivity' , 'https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js' , array(), '1.0.1', 'true' );
+
 	wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/main.js', array(), '1.0.1' ,   true );
 }
 

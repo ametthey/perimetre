@@ -8,19 +8,22 @@ get_header(); ?>
     <div id="section--vertical">
 
         <!-- home page visible on page load -->
-        <div class="slide">
+        <div class="slide slide-home slide-home-animation">
 
             <div class="section__presentation__website">
+
                 <!-- 16:9 en vidéo -->
                 <video class="video--cinema" autoplay muted loop playsinline preload="auto">
                     <source type="video/mp4" src="<?php echo get_field('home_background_video'); ?>"></source>
                 </video>
 
-                <h1 class="home__sentence__presentation">
-                    Perimetre Studo<br>
-                    is a creative<br>
-                    based <span>in</span> paris
-                </h1>
+                <!-- Lottie empty container for spacing at the top -->
+                <div class="lottie-before"></div>
+
+                <!-- Lottie scroll animation -->
+                <div class="lottie-container">
+                    <lottie-player class="lottie-element" id="firstLottie" src="wp-content/themes/_themename/dist/assets/images/perimetre_lottie6g.json";></lottie-player>
+                </div>
 
                 <button type="button" class="js-trigger">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/chevron.svg" alt="">
@@ -35,7 +38,7 @@ get_header(); ?>
         <?php get_template_part( 'template-parts/content', 'home' ); ?>
         <?php endwhile; endif; ?>
 
-        <div class="slide footer">
+        <div class="slide slide-home footer">
             <div class="section__footer">
                 <div class="section__footer__left">
                     <p>PERIMETRE ©2020	<br> 74 rue des martyrs, 75018 PARIS</p>

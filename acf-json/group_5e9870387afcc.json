@@ -50,7 +50,7 @@
             "key": "field_5f64ce6c6591e",
             "label": "Texte centrale",
             "name": "text_center",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -61,9 +61,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": 150,
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -81,7 +81,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1600442114
+    "modified": 1605087253
 }

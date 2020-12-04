@@ -1,8 +1,12 @@
 
 <div class="menu__about">
 
+
+
     <div class="menu__about__presentation">
-        <h2><?php echo get_field('header_presentation', 'option'); ?></h2>
+        <h2 data-fx="14">perimetre is a multidisciplinary creative studio. We conceive and produce content working in many fields including
+        <a href="#" data-img="/wp-content/uploads/2020/06/perimetre_redbull-1.jpg,/wp-content/uploads/2020/06/perimetre-futures-carto-4.jpg,/wp-content/uploads/2020/06/perimetre-futures-carto-3.jpg">art direction</a>, <a>strategy</a>, <a>graphic design</a>, <a>motion design</a>, <a>web development</a>, <a>3D</a>. Beyond that, our diverse collaborations always pushes us to experiment ne practices and techniques. That’s what truly drives us. </h2>
+        <h4>Thanks to all the people we collaborated with : Oppo, Futur.e.s festival, Red Bull, Radio Nova, Subtyl, Eddy de Pretto, Cuniculaire, Orelsan x Damso, Converse, Havana Club, Ornement, Kekra, Corida, Yellam, Ditlef, Inspire, Poupie, Dior, Who’s Next, Archirêve, Rilesundayz, Paco Rabanne, Bureau Badass, Vice, Academia, Adidas, Zita…</h4>
 
     </div>
     <div class="menu__about__contact">
@@ -59,6 +63,9 @@
             74 rue des martyrs 75018 – Paris
         </h5>
 
+        <!-- separator -->
+        <div class="separator"></div>
+
         <div class="about__links__container">
             <?php if ( get_field('header_portfolio', 'option') ):?>
             <a class="about__link" href="<?php the_field('header_portfolio', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">download portfolio</a>
@@ -67,20 +74,22 @@
             <?php if ( get_field('header_newsletter', 'option') ): ?>
             <a class="about__link" href="<?php the_field('header_newsletter', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">newsletter</a>
             <?php endif; ?>
+
+            <?php if ( get_field('header_facebook', 'option') ): ?>
+            <a class="about__link" href="<?php the_field('header_facebook', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">facebook</a>
+            <?php endif; ?>
+
+            <?php if ( get_field('header_instagram', 'option') ): ?>
+            <a class="about__link" href="<?php the_field('header_instagram', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">instagram</a>
+            <?php endif; ?>
+
+            <?php if ( get_field('header_linkedin', 'option') ): ?>
+            <a class="about__link" href="<?php the_field('header_linkedin', 'option'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow_right.svg" alt="">linkedin</a>
+            <?php endif; ?>
         </div>
 
-        <!-- social media -->
-        <div class="socials__links__container">
-            <?php if ( get_field('header_facebook', 'option') ): ?>
-            <a href="<?php the_field('header_facebook', 'option'); ?>" target="_blank">facebook</a>
-            <?php endif; ?>
-            <?php if ( get_field('header_instagram', 'option') ): ?>
-            <a href="<?php the_field('header_instagram', 'option'); ?>" target="_blank">instagram</a>
-            <?php endif; ?>
-            <?php if ( get_field('header_linkedin', 'option') ): ?>
-            <a href="<?php the_field('header_linkedin', 'option'); ?>" target="_blank">linkedin</a>
-            <?php endif; ?>
-        </div>
+        <!-- separator -->
+        <div class="separator"></div>
 
         <!-- credits -->
         <div class="credits">

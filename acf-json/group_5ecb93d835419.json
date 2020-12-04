@@ -94,7 +94,7 @@
             "key": "field_5ece6d60f7fcb",
             "label": "Texte central",
             "name": "text_center",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -105,9 +105,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": 150,
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -140,7 +140,7 @@
         "tags",
         "send-trackbacks"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1592143263
+    "modified": 1605087130
 }
