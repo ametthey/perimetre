@@ -14,15 +14,12 @@ get_header(); ?>
 
                 <!-- 16:9 en vidéo -->
                 <video class="video--cinema" autoplay muted loop playsinline preload="auto">
-                    <source type="video/mp4" src="<?php echo get_field('home_background_video'); ?>"></source>
+                    <source type="video/mp4" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/showreel_web.mp4"></source>
                 </video>
-
-                <!-- Lottie empty container for spacing at the top -->
-                <div class="lottie-before"></div>
 
                 <!-- Lottie scroll animation -->
                 <div class="lottie-container">
-                    <lottie-player class="lottie-element" id="firstLottie" src="wp-content/themes/_themename/dist/assets/images/perimetre_lottie6g.json";></lottie-player>
+                    <lottie-player class="lottie-element" id="firstLottie" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/perimetre_lottie6g.json";></lottie-player>
                 </div>
 
                 <button type="button" class="js-trigger">

@@ -4,8 +4,8 @@
 
 
     <div class="menu__about__presentation">
-        <h2 data-fx="14">perimetre is a multidisciplinary creative studio. We conceive and produce content working in many fields including
-        <a href="#" data-img="/wp-content/uploads/2020/06/perimetre_redbull-1.jpg,/wp-content/uploads/2020/06/perimetre-futures-carto-4.jpg,/wp-content/uploads/2020/06/perimetre-futures-carto-3.jpg">art direction</a>, <a>strategy</a>, <a>graphic design</a>, <a>motion design</a>, <a>web development</a>, <a>3D</a>. Beyond that, our diverse collaborations always pushes us to experiment ne practices and techniques. That’s what truly drives us. </h2>
+        <!-- <h2 data&#45;fx="14">perimetre is a multidisciplinary creative studio. We conceive and produce content working in many fields including -->
+        <!-- <a href="#" data&#45;img="/wp&#45;content/uploads/2020/06/perimetre_redbull&#45;1.jpg,/wp&#45;content/uploads/2020/06/perimetre&#45;futures&#45;carto&#45;4.jpg,/wp&#45;content/uploads/2020/06/perimetre&#45;futures&#45;carto&#45;3.jpg">art direction</a>, <a>strategy</a>, <a>graphic design</a>, <a>motion design</a>, <a>web development</a>, <a>3D</a>. Beyond that, our diverse collaborations always pushes us to experiment ne practices and techniques. That’s what truly drives us. </h2> -->
         <h4>Thanks to all the people we collaborated with : Oppo, Futur.e.s festival, Red Bull, Radio Nova, Subtyl, Eddy de Pretto, Cuniculaire, Orelsan x Damso, Converse, Havana Club, Ornement, Kekra, Corida, Yellam, Ditlef, Inspire, Poupie, Dior, Who’s Next, Archirêve, Rilesundayz, Paco Rabanne, Bureau Badass, Vice, Academia, Adidas, Zita…</h4>
 
     </div>

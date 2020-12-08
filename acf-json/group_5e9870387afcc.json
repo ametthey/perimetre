@@ -61,7 +61,7 @@
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": 150,
+            "maxlength": 50,
             "rows": "",
             "new_lines": ""
         }
@@ -83,5 +83,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1605087253
+    "modified": 1607212861
 }
